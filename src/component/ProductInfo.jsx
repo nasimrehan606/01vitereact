@@ -209,3 +209,48 @@ const Move = () => {
   );
 };
 */
+
+//UseState function
+/*
+const [friends, setFriends] = useState(["Ali", "Rehan"]);
+  const AddFriend = () => setFriends([...friends, "Umar"]);
+  const removeFriend = () => setFriends(friends.filter((f) => f !== "Ali"));
+  const updateFriend = () => {
+    setFriends(friends.map((f) => (f === "Rehan" ? "H.Rehan Nasim" : f)));
+  };
+
+  return (
+    <div>
+      {friends.map((f) => (
+        <li key={Math.random()}>{f}</li>
+      ))}
+      <button onClick={AddFriend}>Add a new friend</button>
+      <button onClick={removeFriend}>Remove a friend</button>
+      <button onClick={updateFriend}>Update a friend</button>
+    </div>
+  );
+  */
+
+//UseSate Function Change movie name
+/*
+  const App = () => {
+  const [movie, setMovie] = useState([
+    { id: 1, title: "Spider Man", Ratings: 7 },
+    { id: 2, title: "Super Man", Ratings: 6 },
+  ]);
+
+  const HandleClick = () => {
+    setMovie(
+      movie.map((m) => (m.id === 2 ? { ...movie, title: "jonh Wick 5" } : m))
+    );
+  };
+
+  return (
+    <div>
+      {movie.map((m) => (
+        <li key={Math.random()}>{m.title}</li>
+      ))}
+      <button onClick={HandleClick}>Change Moivie Name</button>
+    </div>
+  );
+};*/
